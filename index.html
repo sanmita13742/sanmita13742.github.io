@@ -4,25 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Sanmita's Digital Footprint | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1> Sanmita's Yap Space </h1>
-    <p> hii there!! im glad you stumbled onto this page.</p>
-    <h2> if you are a recruiter</h2>
-    <p> (hire me pls)</p>
-    <p> my education grid
-    <p>
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1> Sanmita's Digital Footprint </h1>
+            <p> hii there!! well, i'm glad you stumbled onto my little corner of the internet.</p>
+            <h4 class="recruiter-text"> recruiter?</h4>
+            <p> i have skills, projects, and a rapidly approaching graduation. pls hire me.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images/me-at-the-beach.JPG" alt="Sanmita" loading="lazy">
+        </div>
+    </div>
+
+    <h3> the numbers behind my academic suffering </h3>
+
     <table>
         <tr>
             <th> institute </th>
             <th> degree </th>
             <th> CGPA </th>
         </tr>
-        <td> Amrita Vishwa Vidyapeetham </td>
-        <td> B.Tech in Computer Science and Engineering (AI Specialization) </td>
-        <td> 8.52 </td>
+        <tr>
+            <td> Amrita Vishwa Vidyapeetham </td>
+            <td> B.Tech in Computer Science and Engineering (AI Specialization) </td>
+            <td> 8.52 </td>
+        </tr>
         <tr>
             <td> Senthil Public School, Salem </td>
             <td> CBSE </td>
@@ -30,66 +41,391 @@
         </tr>
         <tr>
             <td> Holy Angles's Public School </td>
-            <td> CBSC </td>
+            <td> CBSE </td>
             <td> 92.1% </td>
         </tr>
     </table>
 
-    <section id="courses">
-        <h3> courses ive taken over the years in my university </h3>
+    <!-- Internship Section -->
+    <section id="experience">
+        <h3>interned at ByteProLabs</h3>
         <details>
-            <summary>Click to view courses over 3 years</summary>
+            <summary class="small-summary">Click to view internship details</summary>
+            <h4>Full Stack Developer Intern · Bangalore</h4>
+            <p><strong>Duration:</strong> May 2025 — Jun 2025</p>
             <ul>
-                <li>Data Structures & Algorithms</li>
-                <li>Machine Learning & Deep Learning</li>
-                <li>Web Development</li>
-                <li>Database Management Systems</li>
+                <li>Developed computer vision pipeline using OpenCV for real-world image processing and visual data
+                    analysis with
+                    industry-standard preprocessing and feature extraction techniques.</li>
             </ul>
         </details>
     </section>
+
+    <section id="courses">
+        <h3> courses i willingly (and sometimes unwillingly) took over the years </h3>
+        <details>
+            <summary class="small-summary">Click to view courses over 3 years</summary>
+
+            <!-- Color Legend -->
+            <div class="course-legend">
+                <span class="legend-item"><span class="legend-dot important"></span> <strong>Red:</strong> Important
+                    Core</span>
+                <span class="legend-item"><span class="legend-dot important-fav"></span> <strong>Purple:</strong>
+                    Important & Favourite </span>
+                <span class="legend-item"><span class="legend-dot fav"></span> <strong>Green:</strong>
+                    Favourite </span>
+            </div>
+
+            <!-- Semester I -->
+            <div class="semester-block">
+                <h4>Semester I</h4>
+                <ul>
+                    <li>22MAT110 — Mathematics for Computing</li>
+                    <li>22PHY106 — Computational Physics</li>
+                    <li class="course-important">22AIE101 — Problem Solving & C Programming</li>
+                    <li>22AIE102 — Elements of Computing Systems</li>
+                    <li class="course-important">22MAT121 — Discrete Mathematics</li>
+                    <li>22ADM101 — Foundations of Indian Heritage</li>
+                    <li>19ENG111 — Technical Communication</li>
+                    <li>22AVP103 — Mastery Over Mind (MAOM)</li>
+                </ul>
+            </div>
+
+            <!-- Semester II -->
+            <div class="semester-block">
+                <h4>Semester II</h4>
+                <ul>
+                    <li>22MAT122 — Mathematics for Computing</li>
+                    <li class="course-important">22AIE111 — Object Oriented Programming in Java</li>
+                    <li class="course-important">22AIE112 — Data Structures & Algorithms</li>
+                    <li>22AIE113 — Elements of Computing Systems - 2</li>
+                    <li>22AIE114 — Introduction to Electrical and Electronics Engineering</li>
+                    <li class="course-important-fav">22AIE115 — User Interface Design (UID)</li>
+                    <li>22ADM111 — Glimpses of Glorious India</li>
+                </ul>
+            </div>
+
+            <!-- Semester III -->
+            <div class="semester-block">
+                <h4>Semester III</h4>
+                <ul>
+                    <li>22MAT220 — Mathematics for Computing</li>
+                    <li class="course-important">22AIE201 — Fundamentals of AI</li>
+                    <li class="course-important">22AIE202 — Operating Systems</li>
+                    <li class="course-important">22AIE203 — Data Structures & Algorithms 2</li>
+                    <li>22AIE204 — Introduction to Computer Networks</li>
+                    <li class="course-fav">22AIE205 — Introduction to Python</li>
+                    <li>22BIO201 — Intelligence of Biological Systems - 1</li>
+                    <li>Amrita Values Program</li>
+                </ul>
+            </div>
+
+            <!-- Semester IV -->
+            <div class="semester-block">
+                <h4>Semester IV</h4>
+                <ul>
+                    <li>22MAT230 — Mathematics for Computing</li>
+                    <li>22AIE211 — Introduction to Communication & IoT</li>
+                    <li class="course-important">22AIE212 — Design and Analysis of Algorithms</li>
+                    <li class="course-important-fav">22AIE213 — Machine Learning</li>
+                    <li>22AIE214 — Introduction to AI Robotics</li>
+                    <li>22BIO211 — Intelligence of Biological Systems 2</li>
+                    <li>Amrita Values Program</li>
+                    <li>19ENV300 — Environmental Science</li>
+                    <li>19SSK211 — Soft Skills I</li>
+                </ul>
+            </div>
+
+            <!-- Semester V -->
+            <div class="semester-block">
+                <h4>Semester V</h4>
+                <ul>
+                    <li>22AIE301 — Probabilistic Reasoning</li>
+                    <li>22AIE302 — Formal Language and Automata</li>
+                    <li class="course-important-fav">22AIE303 — Database Management Systems (DBMS)</li>
+                    <li class="course-important">22AIE304 — Deep Learning</li>
+                    <li>22AIE305 — Introduction to Cloud Computing</li>
+                    <li>19SSK301 — Soft Skills II</li>
+                    <li>19LIV390 — Live-in-Labs I</li>
+                </ul>
+            </div>
+
+            <!-- Semester VI -->
+            <div class="semester-block">
+                <h4>Semester VI</h4>
+                <ul>
+                    <li class="course-important">22AIE311 — Software Engineering (Project-Based)</li>
+                    <li>22AIE312 — Big Data Analytics</li>
+                    <li class="course-important-fav">22AIE313 — Computer Vision & Image Processing</li>
+                    <li>22AIE314 — Computer Security</li>
+                    <li class="course-important">22AIE315 — Natural Language Processing</li>
+                    <li>19SSK311 — Soft Skills III</li>
+                    <li>19LIV490 — Live-in-Labs II</li>
+                </ul>
+            </div>
+
+            <!-- Semester VII & VIII -->
+            <div class="semester-block">
+                <h4>Semester VII & VIII</h4>
+                <ul>
+                    <li class="course-important-fav">22AIE401 — Reinforcement Learning</li>
+                    <li>19LAW300 — Indian Constitution</li>
+                    <li class="course-important">22AIE498 — Project Phase 1</li>
+                    <li class="course-important">22AIE499 — Project Phase 2</li>
+                </ul>
+            </div>
+        </details>
+    </section>
+
+    <!-- Side-by-side Projects Section -->
     <section id="projects">
-        <h2>Favorite Projects</h2>
+        <h3> favourite projects</h3>
 
+        <div class="projects-grid">
+            <!-- Project Card 1: HydroPredict -->
+            <article class="project-card">
+                <h4>HydroPredict: Groundwater Prediction API</h4>
+                <span class="badge"> winner (yayy) · SocioHack Hackathon, ICSRF 2025</span>
+                <ul>
+                    <li>Led a 5-member team to build a groundwater prediction pipeline integrating 10 years of
+                        multi-source geospatial satellite data via Google Earth Engine.</li>
+                    <li>Engineered a feature pipeline with temporal aggregations, lag variables, drought indicators, and
+                        geospatial attributes before benchmarking regression models with AutoGluon.</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/sanmita13742/HydroPredict" target="_blank"
+                        rel="noopener noreferrer">GitHub Repo</a> |
+                    <a href="https://canva.link/ni5nd6os0ezkc30" target="_blank" rel="noopener noreferrer">Slides</a>
+                </p>
+            </article>
 
-        <article class="project-card">
-            <h3>Project Title</h3>
-            <p><strong>Description:</strong> Brief overview of what this project does.</p>
-            <p><strong>Why I like it:</strong> Personal touch / what made this special to build.</p>
+            <!-- Project Card 2: Siamese U-Net Damage Assessment -->
+            <article class="project-card">
+                <h4>Ordinal-Aware Siamese U-Net for Satellite Building Damage Assessment</h4>
+                <span class="category-tag">Semester VI · Computer Vision</span>
+                <ul>
+                    <li>Designed an ordinal-aware Siamese U-Net for automated building localization and 5-class disaster
+                        damage grading across 9,360 satellite tiles.</li>
+                    <li>Achieved 0.62 Damage HM-F1 (surpassing the 0.43 xBD baseline) with robust cross-domain
+                        generalization to unseen disaster events.</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/sanmita13742/satellite-damage-assessment" target="_blank"
+                        rel="noopener noreferrer">GitHub Repo</a> |
+                    <a href="https://canva.link/l9v7qi4xpbtbzhp" target="_blank" rel="noopener noreferrer">Slides</a>
+                </p>
+            </article>
 
-            <p><strong>Skills Developed:</strong></p>
+            <!-- Project Card 3: Stack Overflow Recommender -->
+            <article class="project-card">
+                <h4>Stack Overflow Expert Recommender System at Scale</h4>
+                <span class="category-tag">Semester VI · Big Data Analytics</span>
+                <ul>
+                    <li>Built a proactive Stack Overflow expert recommendation system over 33.6M interactions using
+                        Hadoop HDFS and Apache Spark, achieving AUC-ROC of 0.7754 on a temporally held-out test set.
+                    </li>
+                    <li>Designed a context-aware scoring engine for scalable expert matching.</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/sanmita13742/stackoverflow-recommender-spark" target="_blank"
+                        rel="noopener noreferrer">GitHub Repo</a> |
+                    <a href="https://canva.link/j2yjicrz2i9unnl" target="_blank" rel="noopener noreferrer">Slides</a>
+                </p>
+            </article>
+        </div>
+
+        <!-- Projects Currently Working On Toggle -->
+        <details>
+            <summary class="small-summary">Click to view projects I'm currently working on</summary>
+            <div class="projects-grid">
+                <!-- Ongoing Project Card 1: RL Image Goal Navigation -->
+                <article class="project-card">
+                    <h4>Reinforcement Learning: Image-Goal Navigation</h4>
+                    <p><strong>Focus:</strong> Developing goal-driven navigation policies utilizing visual inputs and
+                        reinforcement learning in embodied AI environments.</p>
+                    <p>
+                        <a href="https://github.com/sanmita13742/RL-Image-Goal-Navigation/" target="_blank"
+                            rel="noopener noreferrer">GitHub Repo</a> |
+                        <a href="https://canva.link/cqqu1pwhgfae02u" target="_blank"
+                            rel="noopener noreferrer">Slides</a>
+                    </p>
+                </article>
+
+                <!-- Ongoing Project Card 2: Speech Processing -->
+                <article class="project-card">
+                    <h4>Speech Processing: Early Code-Switch Prediction</h4>
+                    <p><strong>Focus:</strong> Acoustic and linguistic modeling for early detection and prediction of
+                        code-switching boundaries in multilingual speech.</p>
+                    <p>
+                        <a href="https://github.com/tishtakalita/early-code-switch-prediction" target="_blank"
+                            rel="noopener noreferrer">GitHub Repo</a> |
+                        <a href="https://canva.link/3l7g37h0zqtmwwx" target="_blank"
+                            rel="noopener noreferrer">Slides</a>
+                    </p>
+                </article>
+
+                <!-- Ongoing Project Card 3: Meta Evaluation Framework -->
+                <article class="project-card">
+                    <h4>Benchmarking Meta Evaluation Framework</h4>
+                    <p><strong>Focus:</strong> Meta-evaluation and robustness benchmarking suite for explainable AI
+                        (XAI) feature attributions.</p>
+                    <p>
+                        <a href="https://github.com/tishtakalita/xai-robustness-meta-evaluation" target="_blank"
+                            rel="noopener noreferrer">GitHub Repo</a> |
+                        <a href="https://canva.link/lm0ozn1xd5qmgez" target="_blank"
+                            rel="noopener noreferrer">Slides</a>
+                    </p>
+                </article>
+            </div>
+        </details>
+    </section>
+
+    <!-- Things I'm Currently Learning Section -->
+    <section id="currently-learning">
+        <h3>the area under my current learning curve</h3>
+        <div class="learning-grid">
+            <article class="learning-card">
+                <h4>ML / DL Fundamentals (Again)</h4>
+                <p><strong>By:</strong> Andrej Karpathy (Neural Networks: Zero to Hero)</p>
+                <p><strong>Description:</strong> Building neural networks from scratch, backpropagation from first
+                    principles, and language model architectures.</p>
+                <p>
+                    <a href="https://github.com/sanmita13742/everything-andrej" target="_blank"
+                        rel="noopener noreferrer">GitHub Repository & Notes &rarr;</a>
+                </p>
+            </article>
+
+            <article class="learning-card">
+                <h4>Computer Vision First Principles</h4>
+                <p><strong>By:</strong> Random YouTube deep dives & research lectures</p>
+                <p><strong>Description:</strong> Classical image processing, spatial filtering, feature extraction, and
+                    modern vision architectures.</p>
+                <p>
+                    <a href="https://github.com/sanmita13742/computer-vision-first-principles" target="_blank"
+                        rel="noopener noreferrer">GitHub Repository & Notes &rarr;</a>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Miscellaneous / Hackathons Section -->
+    <section id="miscellaneous">
+        <h3>miscellaneous</h3>
+        <details>
+            <summary class="small-summary">Click to view hackathons & achievements</summary>
             <ul>
-                <li>Python / PyTorch</li>
-                <li>FastAPI</li>
-                <li>UI/UX Design</li>
+                <li><strong>Winner & Team Lead</strong> · SocioHack Hackathon, International Conference on Sustainable &
+                    Resilient Futures 2025</li>
+                <li><strong>Participant</strong> · Infosys Global Hackathon 2025</li>
+                <li><strong>Top 10 Finalist</strong> · Confluence Hackathon, PES University, Bangalore 2024</li>
+                <li><strong>Participant</strong> · UI/UX 24-hour Hackathon, NIT Patna (KRITI Design Fest’24) 2024</li>
             </ul>
-
-
-            <a href="https://github.com/sanmita13742/" target="_blank" rel="noopener noreferrer">GitHub
-                Repo</a>
-        </article>
-    </section>
+        </details>
     </section>
 
+    <!-- LeetCode Progress Section -->
+    <section id="leetcode">
+        <h4>my embarrassing LeetCode progress TT </h4>
+        <p><i>(im catching up)</i></p>
+        <p>
+            <a href="https://leetcode.com/u/Hb2AtxRsTp/" target="_blank" rel="noopener noreferrer"> click view my
+                LeetCode
+                profile (or not... you can skip it if you want TT)</a>
+        </p>
+    </section>
+
+    <!-- Side-by-side Other Skills Section -->
     <section id="other-skills">
-        <h2>Other Skills</h2>
-        <ul>
-            <li>Photography</li>
-            <li>Graphic Design</li>
-            <li>Art</li>
-        </ul>
+        <h3>Other Skills & Creative Works</h3>
+        <div class="skills-grid">
+            <!-- Photography Card -->
+            <div class="skill-card">
+                <img src="images/photo-me.jpg" alt="Photography by Sanmita" loading="lazy">
+                <h3>Photography</h3>
+                <p class="year">i take my friends' profile pictures from time to time. </p>
+                <p class="year"> the fact that they're still using them</p>
+                <p class="year"> as their profile pictures is proof enough, i think.</p>
+            </div>
+
+            <!-- Graphic Design Card -->
+            <div class="skill-card">
+                <a href="https://canva.link/0fbc4x6x82gcf5r" target="_blank" rel="noopener noreferrer">
+                    <img src="images/team_media_portfolio.png" alt="Graphic Design sample" loading="lazy">
+                </a>
+                <h3>Graphic Design</h3>
+                <p class="year">Advisor of Amrita Team Media Club.</p>
+                <p class="year"> (i designed, printed and sold those notebooks)</p>
+                <p class="year"> (click image!!)</p>
+
+            </div>
+
+            <!-- Art Card -->
+            <div class="skill-card">
+                <img src="images/room.jpg" alt="Art & Illustration by Sanmita" loading="lazy">
+                <h3>Art & Illustration</h3>
+                <p class="year"> i make handmade gifts for my close ones.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Centered Writing Section -->
     <section id="writing">
-        <h2>I Write Too! </h2>
-        <p>I write on Substack and try to post when I can.</p>
-        <a href="">My Substack</a>
-        <p><strong>Recent Article:</strong></p>
-        <article>
-            <h3> recent Article Title</h3>
-            <p></p>
-            <a href="">Read on Substack</a>
-        </article>
+        <h3>i write too!! </h3>
+        <p>my recent endeavour</p>
+        <p><a href="https://substack.com/@sanmii" target="_blank" rel="noopener noreferrer"><strong>visit my
+                    Substack</strong></a></p>
+
+        <div class="substack-card">
+            <h4>i danced: a sore loser's achievement</h4>
+            <p class="subtitle">by sanmita &bull; (a polished journal entry)</p>
+
+            <a href="https://sanmii.substack.com/p/i-danced-a-sore-losers-achievement" target="_blank"
+                rel="noopener noreferrer" class="substack-btn">Read on Substack &rarr;</a>
+        </div>
     </section>
+
+    <!-- Moments Gallery Carousel Section -->
+    <section id="moments">
+        <h3 class="moments-header"><img src="images/gallery/icon.png" alt="icon" loading="lazy"> moments</h3>
+        <div class="gallery-carousel">
+            <div class="gallery-item">
+                <img src="images/gallery/IMG_5039.JPG" alt="Moment 1" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/IMG_5783.jpg" alt="Moment 2" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/IMG_5791.jpg" alt="Moment 3" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/IMG_9126.JPG" alt="Moment 4" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/IMG_9127.JPG" alt="Moment 5" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out or connect with me:</p>
+        <p>
+            <a href="https://linkedin.com/in/sanmita-gnanasundaram" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a> |
+            <a href="mailto:sanmitagj@gmail.com">sanmita13742@gmail.com</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p class="footer-note">
+            I was STRONGLY inspired by Andrej Karpathy's idea of having a plain ol' simple static
+            website (<a href="https://karpathy.ai" target="_blank" rel="noopener noreferrer">karpathy.ai</a>).<br>
+            <em>(No intensive prompting was used in the making of this website. ;>)</em>
+        </p>
+    </footer>
 
 </body>
 
